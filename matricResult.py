@@ -11,7 +11,7 @@ channel = InlineKeyboardButton(text="Channel",url="t.me/neuralp")
 markup.add(group,channel)
 
 
-bot = telebot.TeleBot("8455047386:AAEXGix7ZBrIPNfUHfJkf71OT84eWHALnLA",parse_mode="HTML")
+bot = telebot.TeleBot("<Your Bot API>",parse_mode="HTML")
 
 headers = {
     'accept': 'application/json, text/plain, */*',
@@ -88,5 +88,6 @@ def sendResult(msg):
     # bot.send_document(msg.chat.id,printData)
 
 bot.infinity_polling()
+
 
 
